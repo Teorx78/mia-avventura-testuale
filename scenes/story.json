@@ -1,0 +1,25 @@
+{
+    "castle_exterior": {
+        "text": "Sei di fronte al maestoso castello nemico. Le guardie sembrano distratte.",
+        "choices": [
+            {
+                "text": "Entra di nascosto scavalcando le mura.",
+                "next_scene": "inner_courtyard",
+                "effects": {}
+            },
+            {
+                "text": "Sfonda il portone urlando!",
+                "next_scene": "prison",
+                "effects": {"reputation": -5, "morale": -20}
+            }
+        ]
+    },
+    "inner_courtyard": {
+        "text": "Sei nel cortile interno. Nessuno ti ha visto.",
+        "choices": []
+    },
+    "prison": {
+        "text": "Ti hanno catturato e sbattuto in prigione. Fine della corsa.",
+        "choices": []
+    }
+}
